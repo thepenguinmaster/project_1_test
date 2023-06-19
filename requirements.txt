@@ -1,0 +1,5 @@
+# To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
+# botocore==1.15.43
+boto3==1.26.156
+s3fs==0.4.2
+pandas==2.0.1
