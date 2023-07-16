@@ -6,5 +6,8 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    environment: 
-      TEST_VAR: ${TEST_VAR_1}
+    environment:
+      - TEST_VAR=${TEST_VAR_1}
+    env_file:
+      - .env
+
