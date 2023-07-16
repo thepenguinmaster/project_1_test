@@ -1,19 +1,20 @@
 {
-    "configurations": [
+  "configurations": [
+    {
+      "name": "Docker: Python",
+      "type": "python",
+      "request": "attach",
+      "preLaunchTask": "wait",
+      "connect": {
+        "host": "localhost",
+        "port": 5678
+      },
+      "pathMappings": [
         {
-            "name": "Docker: Python - General",
-            "type": "docker",
-            "request": "launch",
-            "preLaunchTask": "docker-run: debug",
-            "python": {
-                "pathMappings": [
-                    {
-                        "localRoot": "${workspaceFolder}",
-                        "remoteRoot": "/app"
-                    }
-                ],
-                "projectType": "general"
-            }
+          "localRoot": "${workspaceFolder}",
+          "remoteRoot": "."
         }
-    ]
+      ]
+    }
+  ]
 }
